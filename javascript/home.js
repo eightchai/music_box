@@ -1,6 +1,6 @@
 var canvas = new fabric.Canvas('canvas');
-
-
+canvas.selection = false;
+canvas.hoverCursor = "pointer";
 
 //22 vertical boxes (22 notes, 3 octaves & 4 tonics)
 //24 horizontal boxes (6 measures of 4/4)
@@ -15,11 +15,11 @@ for (var hor = 0; hor < 24; hor++){ // vertical diff notes
             height: 23
             });
             
-        rect.hasControls = rect.hasborders = false;
+        rect.hasControls = rect.hasBorders = false;
         rect.lockRotation = rect.lockScalingX = rect.lockScalingY = true;
         rect.lockMovementX = rect.lockMovementY = true;
 
-canvas.add(rect);
+        canvas.add(rect);
     
     }
 }
