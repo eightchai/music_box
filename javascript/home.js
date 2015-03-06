@@ -25,6 +25,7 @@ for (var vert = 0; vert < 22; vert++){ // horizontal different time
             fill: defaultColor,
             width: 23,
             height: 23,
+            selectable: false,
             selected: 0,
             row: vert%7
             });
