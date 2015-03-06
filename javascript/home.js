@@ -24,3 +24,13 @@ for (var hor = 0; hor < 24; hor++){ // vertical diff notes
     }
 }
 
+canvas.on({
+    'mouse:down': function(e){
+        if (e.target){
+            e.target.fill = '#666666';
+            canvas.RenderAll();
+        }
+    }
+});
+this.__canvases.push(canvas);
+
