@@ -26,6 +26,8 @@ for (var vert = 0; vert < 22; vert++){ // horizontal different time
             width: 23,
             height: 23,
             selectable: false,
+            rx: 2,
+            ry: 2,
             selected: 0,
             row: vert%7
             });
